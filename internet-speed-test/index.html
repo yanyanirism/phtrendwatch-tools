@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Internet Speed Test – Check Your Download, Upload and Ping</title>
+<meta name="description" content="Free internet speed test: measure your download speed, upload speed and ping in seconds, right in your browser. Works on Wi-Fi, mobile data and pisowifi.">
+<link rel="canonical" href="https://tools.phtrendwatch.world/internet-speed-test/">
+<meta property="og:title" content="Internet Speed Test – Check Your Download, Upload and Ping">
+<meta property="og:description" content="Free internet speed test: measure your download speed, upload speed and ping in seconds, right in your browser. Works on Wi-Fi, mobile data and pisowifi.">
+<meta property="og:url" content="https://tools.phtrendwatch.world/internet-speed-test/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Handy Calc">
+<meta property="og:image" content="https://tools.phtrendwatch.world/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#4f7a55">
+
+
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+<script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Internet Speed Test", "url": "https://tools.phtrendwatch.world/internet-speed-test/", "description": "Free internet speed test: measure your download speed, upload speed and ping in seconds, right in your browser. Works on Wi-Fi, mobile data and pisowifi.", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "applicationCategory": "UtilitiesApplication", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Calculators", "item": "https://tools.phtrendwatch.world/"}, {"@type": "ListItem", "position": 2, "name": "Internet Speed Test", "item": "https://tools.phtrendwatch.world/internet-speed-test/"}]}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-28K267NVFP"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-28K267NVFP');</script>
+<meta name="google-adsense-account" content="ca-pub-3506388907387832"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3506388907387832" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Handy Calc<span>.</span></a>
+  <nav><a href="/13th-month-pay-calculator/">13th Month Pay</a><a href="/percentage-calculator/">Percentage</a><a href="/loan-calculator/">Loan</a><a href="https://phtrendwatch.world/">PH Trend Watch news</a><a href="/">All tools</a></nav>
+  <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch light or dark theme"><span class="icon-moon" aria-hidden="true">☾</span><span class="icon-sun" aria-hidden="true">☀</span></button>
+</div></header>
+<div class="wrap layout">
+<aside class="side"><button type="button" class="side-toggle" id="side-toggle" aria-expanded="false" aria-controls="side-list">All calculators <span aria-hidden="true">▾</span></button><nav class="side-list" id="side-list" aria-label="All calculators"><h2>Internet</h2><a href="/internet-speed-test/" aria-current="page">Internet Speed Test</a><h2>Pay &amp; taxes (PH)</h2><a href="/take-home-pay-calculator/">Take-Home Pay Calculator</a><a href="/13th-month-pay-calculator/">13th Month Pay Calculator</a><h2>Money</h2><a href="/loan-calculator/">Loan Calculator</a><a href="/compound-interest-calculator/">Compound Interest Calculator</a><a href="/savings-goal-calculator/">Savings Goal Calculator</a><a href="/discount-calculator/">Discount Calculator</a><a href="/tip-calculator/">Tip Calculator</a><a href="/percentage-calculator/">Percentage Calculator</a><h2>Dates</h2><a href="/age-calculator/">Age Calculator</a><a href="/date-difference-calculator/">Days Between Dates</a><h2>Health &amp; units</h2><a href="/bmi-calculator/">BMI Calculator</a><a href="/unit-converter/">Unit Converter</a><h2>PH Trend Watch</h2><a href="https://phtrendwatch.world/">Latest news</a><a href="https://phtrendwatch.world/#markets">Markets: peso rates &amp; stocks</a><a href="https://phtrendwatch.world/#scores">Scores: NBA &amp; football</a><a href="https://phtrendwatch.world/guides.html">Guides</a></nav></aside>
+<main>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Calculators</a> › Internet Speed Test</nav>
+<h1>Internet Speed Test</h1>
+<p class="lead">Check your internet&#x27;s download speed, upload speed and ping in a few seconds.</p>
+<form class="card" id="tool" novalidate>
+<div class="speed-grid">
+  <div class="speed-box"><span>Ping</span><b id="ping">–</b><small>ms</small></div>
+  <div class="speed-box"><span>Download</span><b id="down">–</b><small>Mbps</small></div>
+  <div class="speed-box"><span>Upload</span><b id="up">–</b><small>Mbps</small></div>
+</div>
+<button type="submit" class="start" id="start">Start speed test</button>
+<div class="result" id="out" aria-live="polite"><p>Press <strong>Start speed test</strong>. It uses up to about 40 MB of data.</p></div></form>
+
+
+<article>
+<h2>What the numbers mean</h2>
+<ul>
+  <li><strong>Download (Mbps):</strong> how fast data reaches you — the most important number for browsing, streaming and
+  downloading.</li>
+  <li><strong>Upload (Mbps):</strong> how fast you can send data — matters for video calls, live streaming and uploading
+  photos or files.</li>
+  <li><strong>Ping (ms):</strong> how quickly the connection responds. Lower is better; under about 50 ms feels snappy
+  for online games and calls.</li>
+</ul>
+<h2>How much speed do you need?</h2>
+<div class="table-scroll"><table>
+<thead><tr><th>Activity</th><th>Download speed per device</th></tr></thead>
+<tbody>
+<tr><td>Browsing, email, social media</td><td>1–5 Mbps</td></tr>
+<tr><td>Video calls</td><td>3–5 Mbps</td></tr>
+<tr><td>HD video streaming</td><td>5–10 Mbps</td></tr>
+<tr><td>Online games</td><td>5–10 Mbps, with low ping</td></tr>
+<tr><td>4K streaming</td><td>25 Mbps or more</td></tr>
+</tbody></table></div>
+<p>Several people sharing one connection — as on a family Wi-Fi or a pisowifi — split the total speed between them.</p>
+<h2>Tips for a more accurate test</h2>
+<ul>
+  <li>Pause downloads, updates and streaming on your device while testing.</li>
+  <li>On Wi-Fi, test close to the router, then from where you usually sit, to see how much distance matters.</li>
+  <li>Run the test a few times and at different times of day — speeds often drop in the evening when more people are online.</li>
+</ul>
+<h2>Why is my internet slow?</h2>
+<p>Common causes are weak Wi-Fi signal (walls and distance), too many devices sharing the connection, busy evening
+hours, or an issue with your provider. Restarting the router and moving closer to it fixes many problems. If speeds are
+far below your plan for days, contact your internet provider with your test results.</p>
+<p><em>Speed tests use Cloudflare's public test servers. Results show the speed between your device and the nearest
+server and can vary from test to test.</em></p></article>
+
+<h2>More free calculators</h2>
+<ul class="tools"><li><a href="/take-home-pay-calculator/"><strong>Take-Home Pay Calculator</strong><span>See your net monthly pay after SSS, PhilHealth, Pag-IBIG and income tax.</span></a></li><li><a href="/13th-month-pay-calculator/"><strong>13th Month Pay Calculator</strong><span>Work out your 13th month pay and whether any of it is taxable.</span></a></li><li><a href="/percentage-calculator/"><strong>Percentage Calculator</strong><span>Three quick percentage answers in one place. Results update as you type.</span></a></li><li><a href="/loan-calculator/"><strong>Loan Calculator</strong><span>Enter the amount, interest rate and term to see your monthly payment and how much interest you&#x27;ll pay.</span></a></li><li><a href="/compound-interest-calculator/"><strong>Compound Interest Calculator</strong><span>See how a starting amount plus regular monthly savings grows over time.</span></a></li><li><a href="/savings-goal-calculator/"><strong>Savings Goal Calculator</strong><span>Tell us your goal and deadline and we&#x27;ll work out the monthly amount to set aside.</span></a></li><li><a href="/tip-calculator/"><strong>Tip Calculator</strong><span>Work out the tip and what everyone owes.</span></a></li><li><a href="/discount-calculator/"><strong>Discount Calculator</strong><span>Find the final price after a discount — including an extra discount and sales tax if you need them.</span></a></li><li><a href="/age-calculator/"><strong>Age Calculator</strong><span>Enter a date of birth to get an exact age — and the countdown to the next birthday.</span></a></li><li><a href="/date-difference-calculator/"><strong>Days Between Dates</strong><span>Count the days — and working days — between any two dates.</span></a></li><li><a href="/bmi-calculator/"><strong>BMI Calculator</strong><span>Calculate adult BMI in metric or imperial units.</span></a></li><li><a href="/unit-converter/"><strong>Unit Converter</strong><span>Convert length, weight, volume and temperature instantly.</span></a></li></ul>
+</main>
+</div>
+<footer class="site"><div class="wrap">
+  <p><a href="/">All calculators</a><a href="https://phtrendwatch.world/">PH Trend Watch news</a><a href="/about/">About</a><a href="/privacy/">Privacy</a><a href="/contact/">Contact</a></p>
+  <p>© 2026 Handy Calc. Results are estimates for general information only.</p>
+</div></footer>
+<script>document.getElementById('theme-toggle').addEventListener('click',function(){
+var root=document.documentElement,dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+root.dataset.theme=dark?'light':'dark';try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}});
+document.getElementById('side-toggle').addEventListener('click',function(){
+var side=this.parentNode,open=side.classList.toggle('open');this.setAttribute('aria-expanded',open)});</script>
+<script src="/app.js"></script><script>
+// Measures against Cloudflare's public speed test servers (speed.cloudflare.com), which allow browser tests.
+const BASE = "https://speed.cloudflare.com";
+const now = () => performance.now();
+const mbps = (bytes, ms) => (bytes * 8) / (ms / 1000) / 1e6;
+const fmt = (v) => (v >= 100 ? v.toFixed(0) : v.toFixed(1));
+const set = (id, text) => { document.getElementById(id).textContent = text; };
+const median = (xs) => { const s = [...xs].sort((a, b) => a - b); return s[Math.floor(s.length / 2)]; };
+
+async function ping() {
+  const times = [];
+  for (let i = 0; i < 8; i++) {
+    const t = now();
+    await fetch(`${BASE}/__down?bytes=0&r=${Math.random()}`, { cache: "no-store" });
+    times.push(now() - t);
+  }
+  return median(times.slice(1));  // the first request includes connection setup
+}
+
+async function download() {
+  let best = 0;
+  for (const bytes of [100000, 1000000, 10000000, 25000000]) {
+    const t = now();
+    const res = await fetch(`${BASE}/__down?bytes=${bytes}&r=${Math.random()}`, { cache: "no-store" });
+    await res.arrayBuffer();
+    const ms = now() - t, speed = mbps(bytes, ms);
+    best = bytes >= 1000000 ? speed : best;
+    set("down", fmt(speed));
+    if (ms > 4000) break;  // slow connection: a bigger file would take too long
+  }
+  return best;
+}
+
+async function upload() {
+  let best = 0;
+  for (const bytes of [100000, 1000000, 5000000]) {
+    const body = new Uint8Array(bytes);
+    const t = now();
+    await fetch(`${BASE}/__up?r=${Math.random()}`, { method: "POST", body, cache: "no-store" });
+    const ms = now() - t, speed = mbps(bytes, ms);
+    best = bytes >= 1000000 ? speed : best;
+    set("up", fmt(speed));
+    if (ms > 4000) break;
+  }
+  return best;
+}
+
+function verdict(down) {
+  if (down >= 50) return "Great — fast enough for 4K streaming, big downloads and several users at once.";
+  if (down >= 25) return "Good — fine for HD streaming, online games and video calls.";
+  if (down >= 10) return "OK — fine for browsing, social media, HD video on one device and most online games.";
+  if (down >= 3) return "Basic — browsing and standard-quality video should work; HD video and big downloads will be slow.";
+  return "Slow — pages may load slowly and video may buffer. Try moving closer to the Wi-Fi or testing again later.";
+}
+
+document.getElementById("tool").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const button = document.getElementById("start");
+  button.disabled = true;
+  ["ping", "down", "up"].forEach((id) => set(id, "…"));
+  try {
+    calc.show("out", "<p>Measuring ping…</p>");
+    set("ping", Math.round(await ping()));
+    calc.show("out", "<p>Measuring download speed…</p>");
+    const down = await download();
+    set("down", fmt(down));
+    calc.show("out", "<p>Measuring upload speed…</p>");
+    const up = await upload();
+    set("up", fmt(up));
+    calc.show("out", `<div class="big">${fmt(down)} Mbps download</div><p>${verdict(down)}</p>`);
+  } catch (err) {
+    calc.show("out", '<p class="warn">The test could not finish. Check your connection, turn off VPNs or blockers for this page, and try again.</p>');
+  } finally {
+    button.disabled = false;
+    button.textContent = "Test again";
+  }
+});</script>
+</body>
+</html>
