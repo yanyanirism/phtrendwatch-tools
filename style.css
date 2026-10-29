@@ -172,6 +172,8 @@ article h3 { font-size: 1.05rem; margin-bottom: 4px; }
 .tools strong { display: block; color: var(--accent); margin-bottom: 4px; }
 .tools span { color: var(--muted); font-size: .93rem; }
 .promo { border-left: 4px solid var(--accent); }
+.ad { position: relative; margin: 24px 0; padding-top: 18px; min-height: 120px; }
+.ad-label { position: absolute; top: 0; left: 0; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 footer.site { margin-top: 56px; padding: 28px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
 footer.site a { color: var(--muted); margin-right: 14px; }
 @media (max-width: 520px) {
