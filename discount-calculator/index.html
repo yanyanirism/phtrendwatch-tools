@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discount Calculator – Sale Price After Percent Off</title>
+<meta name="description" content="Find the sale price after a percentage discount, including stacked discounts and sales tax. See exactly how much you save.">
+<link rel="canonical" href="https://tools.phtrendwatch.world/discount-calculator/">
+<meta property="og:title" content="Discount Calculator – Sale Price After Percent Off">
+<meta property="og:description" content="Find the sale price after a percentage discount, including stacked discounts and sales tax. See exactly how much you save.">
+<meta property="og:url" content="https://tools.phtrendwatch.world/discount-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Handy Calc">
+<meta property="og:image" content="https://tools.phtrendwatch.world/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#4f7a55">
+
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Discount Calculator", "url": "https://tools.phtrendwatch.world/discount-calculator/", "description": "Find the sale price after a percentage discount, including stacked discounts and sales tax. See exactly how much you save.", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "applicationCategory": "FinanceApplication", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Calculators", "item": "https://tools.phtrendwatch.world/"}, {"@type": "ListItem", "position": 2, "name": "Discount Calculator", "item": "https://tools.phtrendwatch.world/discount-calculator/"}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Handy Calc<span>.</span></a>
+  <nav><a href="/percentage-calculator/">Percentage</a><a href="/loan-calculator/">Loan</a><a href="/compound-interest-calculator/">Compound Interest</a><a href="/">All tools</a></nav>
+</div></header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Calculators</a> › Discount Calculator</nav>
+<h1>Discount Calculator</h1>
+<p class="lead">Find the final price after a discount — including an extra discount and sales tax if you need them.</p>
+<form class="card" id="tool" novalidate>
+<div class="grid">
+  <div><label for="price">Original price</label><input id="price" inputmode="decimal" value="120"></div>
+  <div><label for="off">Discount (% off)</label><input id="off" inputmode="decimal" value="25"></div>
+  <div><label for="extra">Extra discount (% off, optional)</label><input id="extra" inputmode="decimal" value="0"></div>
+  <div><label for="tax">Sales tax (%, optional)</label><input id="tax" inputmode="decimal" value="0"></div>
+</div>
+<div class="result" id="out" aria-live="polite"></div></form>
+
+<article>
+<h2>How to calculate a discount</h2>
+<p>Multiply the price by (1 − discount ÷ 100). A 25% discount on 120 is 120 × 0.75 = 90.</p>
+<h2>Stacked discounts don't add up</h2>
+<p>"25% off plus an extra 10%" is <strong>not</strong> 35% off. The second discount applies to the already-reduced price:
+120 × 0.75 × 0.90 = 81, which is 32.5% off in total. This calculator shows the true combined discount.</p>
+<h2>Frequently asked questions</h2>
+<h3>Is tax added before or after the discount?</h3>
+<p>In most places sales tax is charged on the discounted price, which is how this calculator works.</p>
+<h3>How do I find the original price from the sale price?</h3>
+<p>Divide the sale price by (1 − discount ÷ 100). If 90 is the price after 25% off, the original was 90 ÷ 0.75 = 120.</p></article>
+<h2>More free calculators</h2>
+<ul class="tools"><li><a href="/percentage-calculator/"><strong>Percentage Calculator</strong><span>Three quick percentage answers in one place. Results update as you type.</span></a></li><li><a href="/loan-calculator/"><strong>Loan Calculator</strong><span>Enter the amount, interest rate and term to see your monthly payment and how much interest you&#x27;ll pay.</span></a></li><li><a href="/compound-interest-calculator/"><strong>Compound Interest Calculator</strong><span>See how a starting amount plus regular monthly savings grows over time.</span></a></li><li><a href="/savings-goal-calculator/"><strong>Savings Goal Calculator</strong><span>Tell us your goal and deadline and we&#x27;ll work out the monthly amount to set aside.</span></a></li><li><a href="/tip-calculator/"><strong>Tip Calculator</strong><span>Work out the tip and what everyone owes.</span></a></li><li><a href="/age-calculator/"><strong>Age Calculator</strong><span>Enter a date of birth to get an exact age — and the countdown to the next birthday.</span></a></li><li><a href="/date-difference-calculator/"><strong>Days Between Dates</strong><span>Count the days — and working days — between any two dates.</span></a></li><li><a href="/bmi-calculator/"><strong>BMI Calculator</strong><span>Calculate adult BMI in metric or imperial units.</span></a></li><li><a href="/unit-converter/"><strong>Unit Converter</strong><span>Convert length, weight, volume and temperature instantly.</span></a></li></ul>
+</main>
+<footer class="site"><div class="wrap">
+  <p><a href="/">All calculators</a><a href="/about/">About</a><a href="/privacy/">Privacy</a><a href="/contact/">Contact</a></p>
+  <p>© 2026 Handy Calc. Results are estimates for general information only.</p>
+</div></footer>
+<script src="/app.js"></script><script>
+calc.bind("tool", () => {
+  const p = calc.num("price"), off = calc.num("off") || 0, extra = calc.num("extra") || 0, tax = calc.num("tax") || 0;
+  if (!(p > 0)) { calc.show("out", '<p class="warn">Enter the original price.</p>'); return; }
+  const sale = p * (1 - off / 100) * (1 - extra / 100);
+  const final = sale * (1 + tax / 100);
+  const effective = (1 - sale / p) * 100;
+  calc.show("out", `<div class="big">${calc.money(final)}</div>
+    <p>You save <strong>${calc.money(p - sale)}</strong> (${calc.round(effective, 2)}% off in total)${tax ? ` · Tax: <strong>${calc.money(final - sale)}</strong>` : ""}</p>`);
+});</script>
+</body>
+</html>
