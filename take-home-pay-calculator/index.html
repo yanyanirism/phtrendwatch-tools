@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Take-Home Pay Calculator Philippines: SSS, PhilHealth, Tax</title>
+<meta name="description" content="Compute your net pay in the Philippines from your monthly salary: SSS, PhilHealth and Pag-IBIG contributions plus withholding tax.">
+<link rel="canonical" href="https://tools.phtrendwatch.world/take-home-pay-calculator/">
+<meta property="og:title" content="Take-Home Pay Calculator Philippines: SSS, PhilHealth, Tax">
+<meta property="og:description" content="Compute your net pay in the Philippines from your monthly salary: SSS, PhilHealth and Pag-IBIG contributions plus withholding tax.">
+<meta property="og:url" content="https://tools.phtrendwatch.world/take-home-pay-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Handy Calc">
+<meta property="og:image" content="https://tools.phtrendwatch.world/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#4f7a55">
+
+
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+<script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Take-Home Pay Calculator", "url": "https://tools.phtrendwatch.world/take-home-pay-calculator/", "description": "Compute your net pay in the Philippines from your monthly salary: SSS, PhilHealth and Pag-IBIG contributions plus withholding tax.", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "applicationCategory": "UtilitiesApplication", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Calculators", "item": "https://tools.phtrendwatch.world/"}, {"@type": "ListItem", "position": 2, "name": "Take-Home Pay Calculator", "item": "https://tools.phtrendwatch.world/take-home-pay-calculator/"}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Handy Calc<span>.</span></a>
+  <nav><a href="/13th-month-pay-calculator/">13th Month Pay</a><a href="/percentage-calculator/">Percentage</a><a href="/loan-calculator/">Loan</a><a href="https://phtrendwatch.world/">PH Trend Watch news</a><a href="/">All tools</a></nav>
+  <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch light or dark theme"><span class="icon-moon" aria-hidden="true">☾</span><span class="icon-sun" aria-hidden="true">☀</span></button>
+</div></header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Calculators</a> › Take-Home Pay Calculator</nav>
+<h1>Take-Home Pay Calculator</h1>
+<p class="lead">See your net monthly pay after SSS, PhilHealth, Pag-IBIG and income tax.</p>
+<form class="card" id="tool" novalidate>
+<div class="grid">
+  <div><label for="salary">Monthly basic salary (₱)</label><input id="salary" inputmode="decimal" value="30000"></div>
+  <div><label for="allow">Non-taxable allowances (₱ a month, optional)</label><input id="allow" inputmode="decimal" value="0"></div>
+</div>
+<div class="result" id="out" aria-live="polite"></div></form>
+
+<article>
+<h2>How take-home pay is computed</h2>
+<p>Your net pay is your basic salary minus your share of government contributions and the income tax withheld by your
+employer:</p>
+<p><code>take-home pay = salary − SSS − PhilHealth − Pag-IBIG − withholding tax</code></p>
+<h2>The deductions (2025 rates)</h2>
+<div class="table-scroll"><table>
+<thead><tr><th>Deduction</th><th>Employee share</th></tr></thead>
+<tbody>
+<tr><td>SSS</td><td>5% of your monthly salary credit (₱5,000 to ₱35,000), so ₱250 to ₱1,750</td></tr>
+<tr><td>PhilHealth</td><td>2.5% of your basic salary (floor ₱10,000, ceiling ₱100,000), so ₱250 to ₱2,500</td></tr>
+<tr><td>Pag-IBIG</td><td>2% of up to ₱10,000, so at most ₱200</td></tr>
+<tr><td>Withholding tax</td><td>Based on the TRAIN Law table, after the contributions above are subtracted</td></tr>
+</tbody></table></div>
+<h2>Income tax table (TRAIN Law, 2023 onwards)</h2>
+<div class="table-scroll"><table>
+<thead><tr><th>Annual taxable income</th><th>Tax</th></tr></thead>
+<tbody>
+<tr><td>₱250,000 and below</td><td>0</td></tr>
+<tr><td>Over ₱250,000 to ₱400,000</td><td>15% of the excess over ₱250,000</td></tr>
+<tr><td>Over ₱400,000 to ₱800,000</td><td>₱22,500 + 20% of the excess over ₱400,000</td></tr>
+<tr><td>Over ₱800,000 to ₱2,000,000</td><td>₱102,500 + 25% of the excess over ₱800,000</td></tr>
+<tr><td>Over ₱2,000,000 to ₱8,000,000</td><td>₱402,500 + 30% of the excess over ₱2,000,000</td></tr>
+<tr><td>Over ₱8,000,000</td><td>₱2,202,500 + 35% of the excess over ₱8,000,000</td></tr>
+</tbody></table></div>
+<p>Earning ₱20,833 a month or less in taxable income means no income tax, since that is ₱250,000 a year.</p>
+<h2>Frequently asked questions</h2>
+<h3>Why is my payslip slightly different?</h3>
+<p>Employers may compute tax per pay period, include overtime or allowances in taxable pay, or apply year-end
+adjustments. Minimum wage earners are exempt from income tax on their minimum wage.</p>
+<h3>Is my 13th month pay taxed?</h3>
+<p>Not up to ₱90,000 combined with other benefits. Use our <a href="/13th-month-pay-calculator/">13th month pay
+calculator</a> to check.</p>
+<p><em>General information based on 2025 contribution rates. Check SSS, PhilHealth, Pag-IBIG and the BIR for the latest
+figures.</em></p></article>
+<h2>More free calculators</h2>
+<ul class="tools"><li><a href="/13th-month-pay-calculator/"><strong>13th Month Pay Calculator</strong><span>Work out your 13th month pay and whether any of it is taxable.</span></a></li><li><a href="/percentage-calculator/"><strong>Percentage Calculator</strong><span>Three quick percentage answers in one place. Results update as you type.</span></a></li><li><a href="/loan-calculator/"><strong>Loan Calculator</strong><span>Enter the amount, interest rate and term to see your monthly payment and how much interest you&#x27;ll pay.</span></a></li><li><a href="/compound-interest-calculator/"><strong>Compound Interest Calculator</strong><span>See how a starting amount plus regular monthly savings grows over time.</span></a></li><li><a href="/savings-goal-calculator/"><strong>Savings Goal Calculator</strong><span>Tell us your goal and deadline and we&#x27;ll work out the monthly amount to set aside.</span></a></li><li><a href="/tip-calculator/"><strong>Tip Calculator</strong><span>Work out the tip and what everyone owes.</span></a></li><li><a href="/discount-calculator/"><strong>Discount Calculator</strong><span>Find the final price after a discount — including an extra discount and sales tax if you need them.</span></a></li><li><a href="/age-calculator/"><strong>Age Calculator</strong><span>Enter a date of birth to get an exact age — and the countdown to the next birthday.</span></a></li><li><a href="/date-difference-calculator/"><strong>Days Between Dates</strong><span>Count the days — and working days — between any two dates.</span></a></li><li><a href="/bmi-calculator/"><strong>BMI Calculator</strong><span>Calculate adult BMI in metric or imperial units.</span></a></li><li><a href="/unit-converter/"><strong>Unit Converter</strong><span>Convert length, weight, volume and temperature instantly.</span></a></li></ul>
+</main>
+<footer class="site"><div class="wrap">
+  <p><a href="/">All calculators</a><a href="https://phtrendwatch.world/">PH Trend Watch news</a><a href="/about/">About</a><a href="/privacy/">Privacy</a><a href="/contact/">Contact</a></p>
+  <p>© 2026 Handy Calc. Results are estimates for general information only.</p>
+</div></footer>
+<script>document.getElementById('theme-toggle').addEventListener('click',function(){
+var root=document.documentElement,dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+root.dataset.theme=dark?'light':'dark';try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}});</script>
+<script src="/app.js"></script><script>
+// Rates as of 2025: SSS 15% (employee 5%, MSC ₱5,000–₱35,000), PhilHealth 5% shared equally (₱10,000–₱100,000),
+// Pag-IBIG 2% employee share on up to ₱10,000, TRAIN Law income tax table (2023 onwards).
+const sss = (pay) => 0.05 * Math.min(35000, Math.max(5000, Math.floor((pay + 250) / 500) * 500));
+const philhealth = (pay) => 0.025 * Math.min(100000, Math.max(10000, pay));
+const pagibig = (pay) => (pay <= 1500 ? 0.01 : 0.02) * Math.min(pay, 10000);
+const annualTax = (x) => x <= 250000 ? 0 : x <= 400000 ? (x - 250000) * 0.15 : x <= 800000 ? 22500 + (x - 400000) * 0.20
+  : x <= 2000000 ? 102500 + (x - 800000) * 0.25 : x <= 8000000 ? 402500 + (x - 2000000) * 0.30 : 2202500 + (x - 8000000) * 0.35;
+calc.bind("tool", () => {
+  const pay = calc.num("salary"), allow = calc.num("allow") || 0;
+  if (!(pay > 0)) { calc.show("out", '<p class="warn">Enter your monthly basic salary.</p>'); return; }
+  const s = sss(pay), p = philhealth(pay), h = pagibig(pay);
+  const taxable = Math.max(pay - s - p - h, 0);
+  const tax = annualTax(taxable * 12) / 12;
+  const net = pay - s - p - h - tax + allow;
+  const row = (label, v, minus) => `<tr><td>${label}</td><td>${minus && v > 0 ? "−" : ""}₱${calc.money(v)}</td></tr>`;
+  calc.show("out", `<div class="big">₱${calc.money(net)} / month</div>
+    <div class="table-scroll"><table><tbody>
+    ${row("Basic salary", pay)}${row("SSS (employee share)", s, true)}${row("PhilHealth (employee share)", p, true)}
+    ${row("Pag-IBIG (employee share)", h, true)}${row("Withholding tax", tax, true)}${allow ? row("Non-taxable allowances", allow) : ""}
+    <tr><th>Take-home pay</th><th>₱${calc.money(net)}</th></tr></tbody></table></div>
+    <p>Taxable income: ₱${calc.money(taxable)} a month (₱${calc.money(taxable * 12)} a year).</p>`);
+});</script>
+</body>
+</html>
