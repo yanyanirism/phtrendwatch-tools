@@ -33,7 +33,9 @@
   <nav><a href="/13th-month-pay-calculator/">13th Month Pay</a><a href="/percentage-calculator/">Percentage</a><a href="/loan-calculator/">Loan</a><a href="https://phtrendwatch.world/">PH Trend Watch news</a><a href="/">All tools</a></nav>
   <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch light or dark theme"><span class="icon-moon" aria-hidden="true">☾</span><span class="icon-sun" aria-hidden="true">☀</span></button>
 </div></header>
-<main class="wrap">
+<div class="wrap layout">
+<aside class="side"><button type="button" class="side-toggle" id="side-toggle" aria-expanded="false" aria-controls="side-list">All calculators <span aria-hidden="true">▾</span></button><nav class="side-list" id="side-list" aria-label="All calculators"><h2>Pay &amp; taxes (PH)</h2><a href="/take-home-pay-calculator/">Take-Home Pay Calculator</a><a href="/13th-month-pay-calculator/">13th Month Pay Calculator</a><h2>Money</h2><a href="/loan-calculator/">Loan Calculator</a><a href="/compound-interest-calculator/" aria-current="page">Compound Interest Calculator</a><a href="/savings-goal-calculator/">Savings Goal Calculator</a><a href="/discount-calculator/">Discount Calculator</a><a href="/tip-calculator/">Tip Calculator</a><a href="/percentage-calculator/">Percentage Calculator</a><h2>Dates</h2><a href="/age-calculator/">Age Calculator</a><a href="/date-difference-calculator/">Days Between Dates</a><h2>Health &amp; units</h2><a href="/bmi-calculator/">BMI Calculator</a><a href="/unit-converter/">Unit Converter</a><h2>PH Trend Watch</h2><a href="https://phtrendwatch.world/">Latest news</a><a href="https://phtrendwatch.world/#markets">Markets: peso rates &amp; stocks</a><a href="https://phtrendwatch.world/#scores">Scores: NBA &amp; football</a><a href="https://phtrendwatch.world/guides.html">Guides</a></nav></aside>
+<main>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Calculators</a> › Compound Interest Calculator</nav>
 <h1>Compound Interest Calculator</h1>
 <p class="lead">See how a starting amount plus regular monthly savings grows over time.</p>
@@ -68,13 +70,16 @@ for illustration, not as a promise of returns.</p></article>
 <h2>More free calculators</h2>
 <ul class="tools"><li><a href="/take-home-pay-calculator/"><strong>Take-Home Pay Calculator</strong><span>See your net monthly pay after SSS, PhilHealth, Pag-IBIG and income tax.</span></a></li><li><a href="/13th-month-pay-calculator/"><strong>13th Month Pay Calculator</strong><span>Work out your 13th month pay and whether any of it is taxable.</span></a></li><li><a href="/percentage-calculator/"><strong>Percentage Calculator</strong><span>Three quick percentage answers in one place. Results update as you type.</span></a></li><li><a href="/loan-calculator/"><strong>Loan Calculator</strong><span>Enter the amount, interest rate and term to see your monthly payment and how much interest you&#x27;ll pay.</span></a></li><li><a href="/savings-goal-calculator/"><strong>Savings Goal Calculator</strong><span>Tell us your goal and deadline and we&#x27;ll work out the monthly amount to set aside.</span></a></li><li><a href="/tip-calculator/"><strong>Tip Calculator</strong><span>Work out the tip and what everyone owes.</span></a></li><li><a href="/discount-calculator/"><strong>Discount Calculator</strong><span>Find the final price after a discount — including an extra discount and sales tax if you need them.</span></a></li><li><a href="/age-calculator/"><strong>Age Calculator</strong><span>Enter a date of birth to get an exact age — and the countdown to the next birthday.</span></a></li><li><a href="/date-difference-calculator/"><strong>Days Between Dates</strong><span>Count the days — and working days — between any two dates.</span></a></li><li><a href="/bmi-calculator/"><strong>BMI Calculator</strong><span>Calculate adult BMI in metric or imperial units.</span></a></li><li><a href="/unit-converter/"><strong>Unit Converter</strong><span>Convert length, weight, volume and temperature instantly.</span></a></li></ul>
 </main>
+</div>
 <footer class="site"><div class="wrap">
   <p><a href="/">All calculators</a><a href="https://phtrendwatch.world/">PH Trend Watch news</a><a href="/about/">About</a><a href="/privacy/">Privacy</a><a href="/contact/">Contact</a></p>
   <p>© 2026 Handy Calc. Results are estimates for general information only.</p>
 </div></footer>
 <script>document.getElementById('theme-toggle').addEventListener('click',function(){
 var root=document.documentElement,dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
-root.dataset.theme=dark?'light':'dark';try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}});</script>
+root.dataset.theme=dark?'light':'dark';try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}});
+document.getElementById('side-toggle').addEventListener('click',function(){
+var side=this.parentNode,open=side.classList.toggle('open');this.setAttribute('aria-expanded',open)});</script>
 <script src="/app.js"></script><script>
 calc.bind("tool", () => {
   const P = calc.num("start") || 0, add = calc.num("monthly") || 0, rate = calc.num("rate"), years = calc.num("yrs");

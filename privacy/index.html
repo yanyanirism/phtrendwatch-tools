@@ -33,7 +33,9 @@
   <nav><a href="/13th-month-pay-calculator/">13th Month Pay</a><a href="/percentage-calculator/">Percentage</a><a href="/loan-calculator/">Loan</a><a href="https://phtrendwatch.world/">PH Trend Watch news</a><a href="/">All tools</a></nav>
   <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch light or dark theme"><span class="icon-moon" aria-hidden="true">☾</span><span class="icon-sun" aria-hidden="true">☀</span></button>
 </div></header>
-<main class="wrap">
+<div class="wrap layout">
+<aside class="side"><button type="button" class="side-toggle" id="side-toggle" aria-expanded="false" aria-controls="side-list">All calculators <span aria-hidden="true">▾</span></button><nav class="side-list" id="side-list" aria-label="All calculators"><h2>Pay &amp; taxes (PH)</h2><a href="/take-home-pay-calculator/">Take-Home Pay Calculator</a><a href="/13th-month-pay-calculator/">13th Month Pay Calculator</a><h2>Money</h2><a href="/loan-calculator/">Loan Calculator</a><a href="/compound-interest-calculator/">Compound Interest Calculator</a><a href="/savings-goal-calculator/">Savings Goal Calculator</a><a href="/discount-calculator/">Discount Calculator</a><a href="/tip-calculator/">Tip Calculator</a><a href="/percentage-calculator/">Percentage Calculator</a><h2>Dates</h2><a href="/age-calculator/">Age Calculator</a><a href="/date-difference-calculator/">Days Between Dates</a><h2>Health &amp; units</h2><a href="/bmi-calculator/">BMI Calculator</a><a href="/unit-converter/">Unit Converter</a><h2>PH Trend Watch</h2><a href="https://phtrendwatch.world/">Latest news</a><a href="https://phtrendwatch.world/#markets">Markets: peso rates &amp; stocks</a><a href="https://phtrendwatch.world/#scores">Scores: NBA &amp; football</a><a href="https://phtrendwatch.world/guides.html">Guides</a></nav></aside>
+<main>
 <h1>Privacy Policy</h1>
 <article>
 <p><em>Last updated: 2026-10-29</em></p>
@@ -50,13 +52,16 @@ requested) for security and to keep the site running. We do not use this to iden
 <p>We may update this policy from time to time; the date above shows the latest version. Questions? See our <a href="/contact/">contact page</a>.</p>
 </article>
 </main>
+</div>
 <footer class="site"><div class="wrap">
   <p><a href="/">All calculators</a><a href="https://phtrendwatch.world/">PH Trend Watch news</a><a href="/about/">About</a><a href="/privacy/">Privacy</a><a href="/contact/">Contact</a></p>
   <p>© 2026 Handy Calc. Results are estimates for general information only.</p>
 </div></footer>
 <script>document.getElementById('theme-toggle').addEventListener('click',function(){
 var root=document.documentElement,dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
-root.dataset.theme=dark?'light':'dark';try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}});</script>
+root.dataset.theme=dark?'light':'dark';try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}});
+document.getElementById('side-toggle').addEventListener('click',function(){
+var side=this.parentNode,open=side.classList.toggle('open');this.setAttribute('aria-expanded',open)});</script>
 
 </body>
 </html>
