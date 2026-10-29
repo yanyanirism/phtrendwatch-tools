@@ -22,13 +22,15 @@
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/style.css">
+<script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Unit Converter", "url": "https://tools.phtrendwatch.world/unit-converter/", "description": "Convert between metric and imperial units of length, weight, volume and temperature instantly. Free online unit converter.", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript", "applicationCategory": "UtilitiesApplication", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Calculators", "item": "https://tools.phtrendwatch.world/"}, {"@type": "ListItem", "position": 2, "name": "Unit Converter", "item": "https://tools.phtrendwatch.world/unit-converter/"}]}</script>
 
 </head>
 <body>
 <header class="site"><div class="wrap">
   <a class="brand" href="/">Handy Calc<span>.</span></a>
-  <nav><a href="/percentage-calculator/">Percentage</a><a href="/loan-calculator/">Loan</a><a href="/compound-interest-calculator/">Compound Interest</a><a href="/">All tools</a></nav>
+  <nav><a href="/13th-month-pay-calculator/">13th Month Pay</a><a href="/percentage-calculator/">Percentage</a><a href="/loan-calculator/">Loan</a><a href="https://phtrendwatch.world/">PH Trend Watch news</a><a href="/">All tools</a></nav>
+  <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch light or dark theme"><span class="icon-moon" aria-hidden="true">☾</span><span class="icon-sun" aria-hidden="true">☀</span></button>
 </div></header>
 <main class="wrap">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Calculators</a> › Unit Converter</nav>
@@ -60,12 +62,15 @@ A quick estimate for weather: double the Celsius figure and add 30.</p>
 <p>US and UK pints and gallons are different sizes — a UK pint is about 20% larger. Cooking measures (cups, tablespoons)
 here use US sizes, which most online recipes use.</p></article>
 <h2>More free calculators</h2>
-<ul class="tools"><li><a href="/percentage-calculator/"><strong>Percentage Calculator</strong><span>Three quick percentage answers in one place. Results update as you type.</span></a></li><li><a href="/loan-calculator/"><strong>Loan Calculator</strong><span>Enter the amount, interest rate and term to see your monthly payment and how much interest you&#x27;ll pay.</span></a></li><li><a href="/compound-interest-calculator/"><strong>Compound Interest Calculator</strong><span>See how a starting amount plus regular monthly savings grows over time.</span></a></li><li><a href="/savings-goal-calculator/"><strong>Savings Goal Calculator</strong><span>Tell us your goal and deadline and we&#x27;ll work out the monthly amount to set aside.</span></a></li><li><a href="/tip-calculator/"><strong>Tip Calculator</strong><span>Work out the tip and what everyone owes.</span></a></li><li><a href="/discount-calculator/"><strong>Discount Calculator</strong><span>Find the final price after a discount — including an extra discount and sales tax if you need them.</span></a></li><li><a href="/age-calculator/"><strong>Age Calculator</strong><span>Enter a date of birth to get an exact age — and the countdown to the next birthday.</span></a></li><li><a href="/date-difference-calculator/"><strong>Days Between Dates</strong><span>Count the days — and working days — between any two dates.</span></a></li><li><a href="/bmi-calculator/"><strong>BMI Calculator</strong><span>Calculate adult BMI in metric or imperial units.</span></a></li></ul>
+<ul class="tools"><li><a href="/13th-month-pay-calculator/"><strong>13th Month Pay Calculator</strong><span>Work out your 13th month pay and whether any of it is taxable.</span></a></li><li><a href="/percentage-calculator/"><strong>Percentage Calculator</strong><span>Three quick percentage answers in one place. Results update as you type.</span></a></li><li><a href="/loan-calculator/"><strong>Loan Calculator</strong><span>Enter the amount, interest rate and term to see your monthly payment and how much interest you&#x27;ll pay.</span></a></li><li><a href="/compound-interest-calculator/"><strong>Compound Interest Calculator</strong><span>See how a starting amount plus regular monthly savings grows over time.</span></a></li><li><a href="/savings-goal-calculator/"><strong>Savings Goal Calculator</strong><span>Tell us your goal and deadline and we&#x27;ll work out the monthly amount to set aside.</span></a></li><li><a href="/tip-calculator/"><strong>Tip Calculator</strong><span>Work out the tip and what everyone owes.</span></a></li><li><a href="/discount-calculator/"><strong>Discount Calculator</strong><span>Find the final price after a discount — including an extra discount and sales tax if you need them.</span></a></li><li><a href="/age-calculator/"><strong>Age Calculator</strong><span>Enter a date of birth to get an exact age — and the countdown to the next birthday.</span></a></li><li><a href="/date-difference-calculator/"><strong>Days Between Dates</strong><span>Count the days — and working days — between any two dates.</span></a></li><li><a href="/bmi-calculator/"><strong>BMI Calculator</strong><span>Calculate adult BMI in metric or imperial units.</span></a></li></ul>
 </main>
 <footer class="site"><div class="wrap">
-  <p><a href="/">All calculators</a><a href="/about/">About</a><a href="/privacy/">Privacy</a><a href="/contact/">Contact</a></p>
+  <p><a href="/">All calculators</a><a href="https://phtrendwatch.world/">PH Trend Watch news</a><a href="/about/">About</a><a href="/privacy/">Privacy</a><a href="/contact/">Contact</a></p>
   <p>© 2026 Handy Calc. Results are estimates for general information only.</p>
 </div></footer>
+<script>document.getElementById('theme-toggle').addEventListener('click',function(){
+var root=document.documentElement,dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+root.dataset.theme=dark?'light':'dark';try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}});</script>
 <script src="/app.js"></script><script>
 const UNITS = {
   length: { mm: ["Millimetres", 0.001], cm: ["Centimetres", 0.01], m: ["Metres", 1], km: ["Kilometres", 1000],

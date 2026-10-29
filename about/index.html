@@ -22,13 +22,15 @@
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/style.css">
+<script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
 
 
 </head>
 <body>
 <header class="site"><div class="wrap">
   <a class="brand" href="/">Handy Calc<span>.</span></a>
-  <nav><a href="/percentage-calculator/">Percentage</a><a href="/loan-calculator/">Loan</a><a href="/compound-interest-calculator/">Compound Interest</a><a href="/">All tools</a></nav>
+  <nav><a href="/13th-month-pay-calculator/">13th Month Pay</a><a href="/percentage-calculator/">Percentage</a><a href="/loan-calculator/">Loan</a><a href="https://phtrendwatch.world/">PH Trend Watch news</a><a href="/">All tools</a></nav>
+  <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch light or dark theme"><span class="icon-moon" aria-hidden="true">☾</span><span class="icon-sun" aria-hidden="true">☀</span></button>
 </div></header>
 <main class="wrap">
 <h1>About Handy Calc</h1>
@@ -42,9 +44,12 @@ information and are not financial, medical or legal advice.</p>
 </article>
 </main>
 <footer class="site"><div class="wrap">
-  <p><a href="/">All calculators</a><a href="/about/">About</a><a href="/privacy/">Privacy</a><a href="/contact/">Contact</a></p>
+  <p><a href="/">All calculators</a><a href="https://phtrendwatch.world/">PH Trend Watch news</a><a href="/about/">About</a><a href="/privacy/">Privacy</a><a href="/contact/">Contact</a></p>
   <p>© 2026 Handy Calc. Results are estimates for general information only.</p>
 </div></footer>
+<script>document.getElementById('theme-toggle').addEventListener('click',function(){
+var root=document.documentElement,dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+root.dataset.theme=dark?'light':'dark';try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}});</script>
 
 </body>
 </html>
